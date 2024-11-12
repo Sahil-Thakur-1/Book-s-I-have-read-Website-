@@ -1,0 +1,123 @@
+/* Resetting margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #121212;
+    color: #e0e0e0;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #e91e63;
+    font-size: 2.5em;
+}
+
+.subtitle {
+    color: #a0a0a0;
+    font-size: 1em;
+}
+
+.sort-options {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 0.9em;
+}
+
+.sort-options a {
+    color: #64b5f6;
+    text-decoration: none;
+}
+
+.sort-options a:hover {
+    text-decoration: underline;
+}
+
+.book-list {
+    margin-top: 30px;
+}
+
+.book {
+    background-color: #1e1e1e;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+    align-items: flex-start;
+    min-height: 375px;
+}
+
+.book img{
+    float: left;
+    width: 200px;
+    height: 300px;
+    margin-right: 10px ;
+}
+
+.book-cover {
+    width: 80px;
+    height: 120px;
+    margin-right: 15px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.book-info {
+    flex: 1;
+}
+
+.book-title {
+    font-family: "Work Sans", sans-serif;
+    font-style: normal;
+    font-size: 1.5em;
+    color: #ffca28;
+    margin-bottom: 5px;
+}
+
+.book-date, .book-recommendation, .book-summary, .book-details {
+    margin: 5px 0;
+    color: #bdbdbd;
+}
+
+.book-date, .book-recommendation {
+    font-weight: 300;
+    color: #ffc107;
+}
+
+.book-summary {
+    color: #e0e0e0;
+    margin-top: 10px;
+}
+
+.book-details {
+    font-size: 0.9em;
+    color: #9e9e9e;
+}
+
+.faq {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #a0a0a0;
+}
+
+.faq a {
+    color: #64b5f6;
+    text-decoration: none;
+}
+
+.faq a:hover {
+    text-decoration: underline;
+}

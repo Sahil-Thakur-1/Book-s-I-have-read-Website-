@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books I’ve Read</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Sahil Thakur</h1>
+        <h1>Books I’ve Read</h1>
+        <p class="subtitle">Tiny summary but detailed notes for each. Use the ISBN number to find it from your local library or anywhere else. This page will constantly update as I read more, so bookmark it if you want to check back in a few months.</p>
+    </header>
+
+    <section class="sort-options">
+        <p>Sorted with my top recommendations up top. Sort by <a href="/title">title</a>, <a href="/newest">newest</a>, or <a href="/rating">best</a>.</p>
+    </section>
+
+    <section class="book-list">
+        <!-- Book entry template -->
+        <% if(Books){ 
+            Books.forEach((book) => {%>
+        <div class="book">
+            <h2 class="book-title"><%=book.title.toUpperCase() %></h2>
+            <img src="https://covers.openlibrary.org/b/isbn/<%=book.isbn%>-L.jpg" alt="">
+            <p class="book-date"><i>Date read: <%= book.read_date%></i></p>
+            <p class="book-recommendation"><i>How Strongly I recommended : <%=book.rating %>/10</i></p>
+            <p class="book-summary">Summary: <%=book.summary%></p>
+            <p class="book-info">Author: <%=book.author%> <br> ISBN: <%=book.isbn  %> <br> Genre:<%=book.genre  %></p>
+        </div>
+        <% }); } %>
+    </section>
+
+    <footer class="faq">
+        <p>And please read this <a href="/faq">FAQ page</a> about these notes, if you have any questions. You can also <a href="/Contact">contact me</a>.</p>
+    </footer>
+</body>
+</html>
